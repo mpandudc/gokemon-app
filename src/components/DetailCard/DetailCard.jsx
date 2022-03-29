@@ -151,10 +151,10 @@ export const DetailCard = () => {
         });
         return myPokemon;
       });
-      navigate(`/`);
+      navigate(`/gokemon-app`);
       return;
     } else {
-      alert('ERROR SUDAH ADA');
+      alert('Nickname already exsist');
     }
   };
 
@@ -215,7 +215,7 @@ export const DetailCard = () => {
               </div>
               <p>CATCH</p>
             </Button>
-            <Link to={'/'}>
+            <Link to={'/gokemon-app'}>
               <CloseButton aria-label="Close modal" hovercolor="#fff" />
             </Link>
           </CardWrapper>

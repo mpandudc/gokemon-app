@@ -21,9 +21,9 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Routes>
-        <Route path="/" element={<Pokedex />} />
-        <Route path="detail/:name" element={<Detail />} />
-        <Route path="mypokemon" element={<MyPokemon />} />
+        <Route path="/gokemon-app" end element={<Pokedex />} />
+        <Route path="/gokemon-app/detail/:name" element={<Detail />} />
+        <Route path="/gokemon-app/mypokemon" element={<MyPokemon />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Navbar />
