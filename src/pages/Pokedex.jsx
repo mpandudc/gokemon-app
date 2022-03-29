@@ -130,7 +130,7 @@ const InputStyle = styled.div`
 
 function SearchName() {
   const methods = useFormContext();
-  return <input {...methods.register('target')} placeholder="Search Pokémon by name ..." />;
+  return <input {...methods.register('target')} placeholder="Search Pokémon by name ..." required />;
 }
 
 export default function Pokedex() {

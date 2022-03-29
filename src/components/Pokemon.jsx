@@ -63,6 +63,7 @@ export const CardContainer = styled.div`
   background-color: #ffff;
   color: #fff;
   margin-top: 1rem;
+  overflow: hidden;
   &:hover {
     transform: scale(1.04);
     transition: transform 0.5s ease-in-out;
@@ -121,6 +122,7 @@ export const Text = styled.h1`
   z-index: 0;
   font-size: 65px;
   font-weight: 900;
+  overflow: hidden;
 `;
 
 export const PokeWrapper = styled.div`

@@ -33,6 +33,7 @@ from { transform: rotate(360deg); }
   `;
   const StatsMax = styled.div`
     position: absolute;
+    overflow: hidden;
     left: 0;
     top: 0px;
     height: 100%;

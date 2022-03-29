@@ -16,7 +16,6 @@ const HeaderContainer = styled.div`
     top-0
     bg-white
     overflow-hidden
-    shadow-md
   `}
   padding: 1em 0 1.5em 0;
 `;

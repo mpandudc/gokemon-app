@@ -51,7 +51,7 @@ const throwball = keyframes`
   }
   100% {
     top: 40%;
-    left: 40%;
+    left: 0;
     transform: scale(1);
   }
   `;
@@ -65,15 +65,23 @@ const catchPokemon = keyframes`
   }
   `;
 
-const Container = styled.div`
-  overflow: hidden;
-  border: solid black;
-  height: 100%;
+const Background = styled.div`
+  height: 100vh;
   width: 100%;
   position: absolute;
   background: rgba(0, 0, 0, 0.83);
   z-index: 200;
-  top: 0;
+`;
+
+const Container = styled.div`
+  height: 100vh;
+  width: 400px;
+  position: absolute;
+  z-index: 200;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 const Pokeball = styled.div`
@@ -84,7 +92,10 @@ const Pokeball = styled.div`
   border-radius: 50%;
   transition: all 0.25s ease-in-out;
   top: 40%;
-  left: 40%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   transform-origin: center bottom;
   animation: ${throwball} 2s 1, ${wiggle} 1s 3 2s;
 `;
@@ -151,15 +162,17 @@ const Catch = styled.div`
 
 const CatchAnimation = () => {
   return (
-    <Container>
-      <Pokeball>
-        <Top></Top>
-        <CentreBlack></CentreBlack>
-        <CentreWhite></CentreWhite>
-        <Buttom></Buttom>
-        <Catch></Catch>
-      </Pokeball>
-    </Container>
+    <Background>
+      <Container>
+        <Pokeball>
+          <Top></Top>
+          <CentreBlack></CentreBlack>
+          <CentreWhite></CentreWhite>
+          <Buttom></Buttom>
+          <Catch></Catch>
+        </Pokeball>
+      </Container>
+    </Background>
   );
 };
 

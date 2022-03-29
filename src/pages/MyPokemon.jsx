@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import React, { useEffect, useState } from 'react';
+import Banner from '../components/Banner';
 import { PokemonID } from '../components/DetailCard/StyledCard';
 import { Header } from '../components/Header';
 import { BottomContainer, CardContainer, CardWrapper, Circle, CircleWrapper, DetailsContainer, MediumText, Poke, PokeWrapper, Text, TopContainer } from '../components/Pokemon';
@@ -9,9 +10,11 @@ import { ListPokemon } from './Pokedex';
 const NewList = styled(ListPokemon)`
   margin-top: 12px;
 `;
+const NewText = styled(Text)``;
 
 const NewContainer = styled(CardContainer)`
   height: 200px;
+  overflow: visible;
 `;
 
 const Nickname = styled.div`
@@ -47,11 +50,11 @@ const ReleaseButton = styled.button`
   border-radius: 50%;
   width: 45px;
   height: 45px;
-  top: -200px;
+  top: -215px;
   z-index: 1;
-  left: 110px;
+  left: 130px;
   p {
-    bottom: 4px;
+    bottom: 5px;
     position: relative;
     height: 45px;
   }
@@ -85,6 +88,7 @@ export default function MyPokemon() {
   return (
     <>
       <Header />
+      <Banner />
       <NewList>
         {myPokemon.map((pokemon, index) => (
           <CardWrapper key={index}>
@@ -98,9 +102,9 @@ export default function MyPokemon() {
                     <img src={'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/' + pokemon.id + '.png'} alt="pokemon" />
                   </Poke>
                 </PokeWrapper>
-                <Text>
+                <NewText>
                   <PokemonID pokemon={pokemon} />
-                </Text>
+                </NewText>
               </TopContainer>
               <BottomContainer>
                 <DetailsContainer>
@@ -111,12 +115,12 @@ export default function MyPokemon() {
                       <PokemonID pokemon={pokemon} />
                     </p>
                   </NewMedText>
-                  <ReleaseButton onClick={() => releasePokemon(myPokemon, pokemon.nickname, pokemon.id)}>
-                    <p>&times;</p>
-                  </ReleaseButton>
                 </DetailsContainer>
               </BottomContainer>
             </NewContainer>
+            <ReleaseButton onClick={() => releasePokemon(myPokemon, pokemon.nickname, pokemon.id)}>
+              <p>&times;</p>
+            </ReleaseButton>
           </CardWrapper>
         ))}
       </NewList>

@@ -175,7 +175,8 @@ export const CloseButton = styled(MdClose)`
 `;
 
 export const ContainerAnimation = styled.div`
-  height: 800px;
+  height: 100vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
