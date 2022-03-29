@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/gokemon-app/static/css/main.f52f3ab0.css",
+    "main.js": "/gokemon-app/static/js/main.63679694.js",
+    "static/js/787.dcee78c7.chunk.js": "/gokemon-app/static/js/787.dcee78c7.chunk.js",
+    "static/media/elipse-home-slide.png": "/gokemon-app/static/media/elipse-home-slide.74b9d6e96ce6f4427203.png",
+    "static/media/Pokemon Hollow.woff": "/gokemon-app/static/media/Pokemon Hollow.6a77709f14594bfa99b6.woff",
+    "static/media/Pokemon Solid.woff": "/gokemon-app/static/media/Pokemon Solid.60e347c99f71d4dbcdbb.woff",
+    "static/media/plus-dark-pattern.png": "/gokemon-app/static/media/plus-dark-pattern.6f39305b632f54642da1.png",
+    "static/media/plus-light-pattern.png": "/gokemon-app/static/media/plus-light-pattern.0fce761d288da739387c.png",
+    "index.html": "/gokemon-app/index.html",
+    "main.f52f3ab0.css.map": "/gokemon-app/static/css/main.f52f3ab0.css.map",
+    "main.63679694.js.map": "/gokemon-app/static/js/main.63679694.js.map",
+    "787.dcee78c7.chunk.js.map": "/gokemon-app/static/js/787.dcee78c7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f52f3ab0.css",
+    "static/js/main.63679694.js"
+  ]
+}
