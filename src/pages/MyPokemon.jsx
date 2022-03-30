@@ -14,7 +14,7 @@ const NewText = styled(Text)``;
 
 const NewContainer = styled(CardContainer)`
   height: 200px;
-  overflow: visible;
+  overflow: hidden;
 `;
 
 const Nickname = styled.div`
@@ -26,6 +26,8 @@ const Nickname = styled.div`
 const NewMedText = styled(MediumText)`
   width: 100%;
   font-size: 15px;
+  display: flex;
+  justify-content: space-between;
   h1 {
     width: 80px;
     display: inline-flex;

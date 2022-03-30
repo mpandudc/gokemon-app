@@ -33,7 +33,6 @@ from { transform: rotate(360deg); }
   `;
   const StatsMax = styled.div`
     position: absolute;
-    overflow: hidden;
     left: 0;
     top: 0px;
     height: 100%;
@@ -58,7 +57,7 @@ from { transform: rotate(360deg); }
     z-index: 2;
     width: 25px;
   `;
-  const Max = (props.base_stat / 120) * 100;
+  const Max = (props.base_stat / 150) * 100;
   return (
     <Container>
       {props.stat}

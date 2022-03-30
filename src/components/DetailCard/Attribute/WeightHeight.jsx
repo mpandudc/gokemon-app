@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 const ColumnStyle = styled.div`
-  width: 55px;
+  width: 60px;
   display: inline-block;
   text-align: center;
   font-size: 16px;

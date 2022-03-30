@@ -210,10 +210,10 @@ export const DetailCard = () => {
               </StatsContent>
             </BottomContent>
             <Button>
-              <div onClick={() => tryCatchPokemon()}>
+              <div className="pokeball" onClick={() => tryCatchPokemon()}>
                 <Pokeball />
               </div>
-              <p>CATCH</p>
+              <p>GO! CATCH</p>
             </Button>
             <Link to={'/gokemon-app'}>
               <CloseButton aria-label="Close modal" hovercolor="#fff" />

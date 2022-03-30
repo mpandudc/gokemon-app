@@ -108,20 +108,18 @@ const InputStyle = styled.div`
     height: 40px;
     padding-left: 20px;
     padding-bottom: 2px;
-    &:active {
-      border: solid red;
-    }
   }
   button[type='submit'],
   input[type='submit'] {
     position: absolute;
     right: 5%;
-    color: black;
+    color: #b8b8b8;
     display: block;
     box-sizing: border-box;
     width: 15%;
     border-radius: 12px;
-    padding: 10px 15px;
+    padding: 0px 10px;
+    font-family: FontAwesome, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     &:hover {
       cursor: pointer;
     }
@@ -175,7 +173,7 @@ export default function Pokedex() {
           <form onSubmit={handleSubmit((data) => HandleSearch(data))}>
             <InputStyle>
               <SearchName />
-              <input type="submit" value="" />
+              <input type="submit" value="&#xf002;" />
             </InputStyle>
           </form>
         </FormProvider>

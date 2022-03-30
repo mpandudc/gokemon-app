@@ -2,8 +2,8 @@ import styled from '@emotion/styled';
 import React from 'react';
 
 const Background = styled.div`
-  min-height: 850px;
-  min-width: 390px;
+  height: 100vh;
+  width: 100%;
   background-color: #b20000;
 `;
 

@@ -6,7 +6,6 @@ const Container = styled.div`
   padding: 0 0 1.5em 0;
   width: 100%;
   background-color: white;
-  border-bottom: 4px solid rgba(0, 0, 0, 0.05);
   border-radius: 0px 0px 40px 40px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 `;

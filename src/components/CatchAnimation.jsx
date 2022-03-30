@@ -66,7 +66,7 @@ const catchPokemon = keyframes`
   `;
 
 const Background = styled.div`
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: absolute;
   background: rgba(0, 0, 0, 0.83);
@@ -74,8 +74,8 @@ const Background = styled.div`
 `;
 
 const Container = styled.div`
-  height: 100vh;
-  width: 400px;
+  height: 100%;
+  width: 100%;
   position: absolute;
   z-index: 200;
   left: 0;

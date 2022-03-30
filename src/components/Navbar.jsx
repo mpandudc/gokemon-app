@@ -29,6 +29,10 @@ const NavImg = styled.div`
   display: flex;
   width: 36px;
   margin: auto;
+  transition: transform 0.2s;
+  &:hover {
+    transform: scale(0.9);
+  }
 `;
 
 const NavNameActive = styled.div`

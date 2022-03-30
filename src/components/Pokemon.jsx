@@ -65,7 +65,7 @@ export const CardContainer = styled.div`
   margin-top: 1rem;
   overflow: hidden;
   &:hover {
-    transform: scale(1.04);
+    transform: scale(0.97);
     transition: transform 0.5s ease-in-out;
   }
   background-image: url(${Pokeball});

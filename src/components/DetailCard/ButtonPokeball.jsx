@@ -1,4 +1,17 @@
+import { keyframes } from '@emotion/react';
 import styled from '@emotion/styled';
+
+const Zoom = keyframes`
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.05, 1.05);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+`;
 
 const Container = styled.div`
   background-color: black;
@@ -13,8 +26,8 @@ const Container = styled.div`
   z-index: 1;
   &:hover {
     cursor: pointer;
-    transform: scale(1.03);
   }
+  animation: ${Zoom} 2s ease-out infinite;
 `;
 
 const Top = styled.div`

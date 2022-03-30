@@ -17,7 +17,7 @@ export const CardWrapper = styled.div`
   height: 100%;
   padding-bottom: 60px;
   max-width: 500px;
-  margin-top: 20px;
+  margin: 20px 0;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.3);
   background: #fff;
   color: #000;
@@ -73,17 +73,26 @@ export const BottomContent = styled.div`
   justify-content: space-around;
   margin: auto;
   margin-top: 1em;
-  width: 320px;
+  width: 330px;
 `;
 
 export const Button = styled.div`
   margin: auto;
   height: 150px;
   margin-top: 30px;
+  .pokeball {
+    margin: auto;
+    width: 105px;
+  }
   p {
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 900;
+    font-family: 'Pokemon Solid Normal';
+    letter-spacing: 3px;
+    color: #ffcb08;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #375fab;
   }
 `;
 
@@ -118,7 +127,7 @@ export const OtherContent = styled.div`
 
 export const WeightHeightContent = styled.div`
   border-bottom: 3px solid rgba(0, 0, 0, 0.08);
-  width: 120px;
+  width: 130px;
   margin: auto;
   margin-bottom: 10px;
 `;
@@ -129,7 +138,7 @@ export const AbilityContent = styled.div`
     justify-content: center;
     letter-spacing: 2px;
     border-bottom: 3px solid rgba(0, 0, 0, 0.08);
-    width: 120px;
+    width: 130px;
     font-size: 16px;
     margin: 2px auto 10px auto;
     font-weight: 700;
@@ -142,7 +151,7 @@ export const MovesContent = styled.div`
     justify-content: center;
     letter-spacing: 2px;
     border-bottom: 3px solid rgba(0, 0, 0, 0.08);
-    width: 120px;
+    width: 130px;
     font-size: 16px;
     margin: 10px auto 10px auto;
     font-weight: 700;
@@ -175,11 +184,11 @@ export const CloseButton = styled(MdClose)`
 `;
 
 export const ContainerAnimation = styled.div`
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 `;
 
 export const ModalBackground = styled.div`
