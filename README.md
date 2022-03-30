@@ -1,6 +1,6 @@
 # GOKEMON APP
 ## Front End Web Development Project
-
+###Github-pages : https://mpandudc.github.io/gokemon-app/
 ### ✨Mentioned ✨
 1. Mobile-first UI/UX
 2. React with React Hooks and React Context
