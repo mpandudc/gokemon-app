@@ -159,7 +159,7 @@ export default function Pokedex() {
     );
 
   const HandleSearch = (value) => {
-    navigate(`/gokemon-app/detail/${value.target.toLowerCase()}`);
+    navigate(`/detail/${value.target.toLowerCase()}`);
   };
 
   return (

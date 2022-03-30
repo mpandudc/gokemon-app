@@ -54,8 +54,8 @@ export function Navbar() {
     <NavMenu>
       <NavList>
         <NavItem>
-          <Link to="/gokemon-app">
-            {location.pathname === '/gokemon-app' ? (
+          <Link to="/">
+            {location.pathname === '/' ? (
               <>
                 <NavImg>
                   <img src={MenuListActive} alt="Pokedex" />
@@ -73,8 +73,8 @@ export function Navbar() {
           </Link>
         </NavItem>
         <NavItem>
-          <Link to="/gokemon-app/mypokemon">
-            {location.pathname === '/gokemon-app/mypokemon' ? (
+          <Link to="/mypokemon">
+            {location.pathname === '/mypokemon' ? (
               <>
                 <NavImg>
                   <img src={MenuMyPokemonActive} alt="My Pokemon" />

@@ -39,7 +39,7 @@ export function Header() {
     <HeaderContainer>
       <LogoContainer>
         <img src={GokemonLogo} alt="gokemon" />
-        <Link to="/gokemon-app">
+        <Link to="/">
           <SearchButton>
             <RiSearch2Line />
           </SearchButton>

@@ -156,7 +156,7 @@ function countOwned(myPokemon, id) {
 export function Pokemon(props) {
   return (
     <CardWrapper>
-      <Link to={'/gokemon-app/detail/' + props.pokemon.name}>
+      <Link to={'/detail/' + props.pokemon.name}>
         <CardContainer>
           <TopContainer>
             <CircleWrapper>

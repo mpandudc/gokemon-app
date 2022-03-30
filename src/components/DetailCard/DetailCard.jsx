@@ -151,10 +151,10 @@ export const DetailCard = () => {
         });
         return myPokemon;
       });
-      navigate(`/gokemon-app`);
+      navigate(`/`);
       return;
     } else {
-      alert('Nickname already exsist');
+      alert('You already have same Pokemon with that nickname. Try different one ...');
     }
   };
 
@@ -215,7 +215,7 @@ export const DetailCard = () => {
               </div>
               <p>GO! CATCH</p>
             </Button>
-            <Link to={'/gokemon-app'}>
+            <Link to={'/'}>
               <CloseButton aria-label="Close modal" hovercolor="#fff" />
             </Link>
           </CardWrapper>
