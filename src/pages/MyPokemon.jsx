@@ -12,6 +12,11 @@ const NewList = styled(ListPokemon)`
 `;
 const NewText = styled(Text)``;
 
+const NewWrapper = styled(CardWrapper)`
+  height: 230px;
+  margin-bottom: 0;
+`;
+
 const NewContainer = styled(CardContainer)`
   height: 200px;
   overflow: hidden;
@@ -93,7 +98,7 @@ export default function MyPokemon() {
       <Banner />
       <NewList>
         {myPokemon.map((pokemon, index) => (
-          <CardWrapper key={index}>
+          <NewWrapper key={index}>
             <NewContainer>
               <TopContainer>
                 <CircleWrapper>
@@ -123,7 +128,7 @@ export default function MyPokemon() {
             <ReleaseButton onClick={() => releasePokemon(myPokemon, pokemon.nickname, pokemon.id)}>
               <p>&times;</p>
             </ReleaseButton>
-          </CardWrapper>
+          </NewWrapper>
         ))}
       </NewList>
     </>
